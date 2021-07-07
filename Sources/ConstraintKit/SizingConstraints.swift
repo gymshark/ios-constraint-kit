@@ -110,18 +110,18 @@ public extension UIView {
     @discardableResult
     func withAspectRatio(_ value: CGFloat, priority: UILayoutPriority = .required) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            widthAnchor.constraint(equalTo: heightAnchor, multiplier: value).with { $0.priority = priority }
-        ])
+        let anchor = widthAnchor.constraint(equalTo: heightAnchor, multiplier: value)
+        anchor.priority = priority
+        NSLayoutConstraint.activate([ anchor ])
         return self
     }
 
     @discardableResult
     func withAspectRatio(greaterThanOrEqualTo value: CGFloat, priority: UILayoutPriority = .required) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            widthAnchor.constraint(greaterThanOrEqualTo: heightAnchor, multiplier: value).with { $0.priority = priority }
-        ])
+        let anchor = widthAnchor.constraint(greaterThanOrEqualTo: heightAnchor, multiplier: value)
+        anchor.priority = priority
+        NSLayoutConstraint.activate([ anchor ])
         return self
     }
 }
