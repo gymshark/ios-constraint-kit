@@ -53,6 +53,11 @@ public extension UIView {
     func withSquare(_ value: CGFloat, priority: UILayoutPriority = .required) -> Self {
         return withFixed(width: value, height: value, priority: priority)
     }
+    
+    @discardableResult
+    func withSize(width: CGFloat = .zero, height: CGFloat = .zero, priority: UILayoutPriority = .required) -> Self {
+        return withFixed(width: width, height: height, priority: priority)
+    }
 
     @discardableResult
     func withSize(_ value: CGSize, priority: UILayoutPriority = .required) -> Self {
