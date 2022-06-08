@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BCD6DCCD2696674C00D2E481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6DCCC2696674C00D2E481 /* AppDelegate.swift */; };
-		BCD6DCCF2696674C00D2E481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6DCCE2696674C00D2E481 /* SceneDelegate.swift */; };
 		BCD6DCD12696674C00D2E481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6DCD02696674C00D2E481 /* ViewController.swift */; };
-		BCD6DCD42696674C00D2E481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD6DCD22696674C00D2E481 /* Main.storyboard */; };
 		BCD6DCD62696674D00D2E481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD6DCD52696674D00D2E481 /* Assets.xcassets */; };
 		BCD6DCD92696674D00D2E481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD6DCD72696674D00D2E481 /* LaunchScreen.storyboard */; };
 		BCD6DCE3269667EE00D2E481 /* ConstraintKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCD6DCE2269667EE00D2E481 /* ConstraintKit */; };
@@ -19,9 +17,7 @@
 /* Begin PBXFileReference section */
 		BCD6DCC92696674C00D2E481 /* ConstraintKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD6DCCC2696674C00D2E481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCD6DCCE2696674C00D2E481 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCD6DCD02696674C00D2E481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCD6DCD32696674C00D2E481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCD6DCD52696674D00D2E481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD6DCD82696674D00D2E481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD6DCDA2696674D00D2E481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD6DCCC2696674C00D2E481 /* AppDelegate.swift */,
-				BCD6DCCE2696674C00D2E481 /* SceneDelegate.swift */,
 				BCD6DCD02696674C00D2E481 /* ViewController.swift */,
-				BCD6DCD22696674C00D2E481 /* Main.storyboard */,
 				BCD6DCD52696674D00D2E481 /* Assets.xcassets */,
 				BCD6DCD72696674D00D2E481 /* LaunchScreen.storyboard */,
 				BCD6DCDA2696674D00D2E481 /* Info.plist */,
@@ -141,7 +135,6 @@
 			files = (
 				BCD6DCD92696674D00D2E481 /* LaunchScreen.storyboard in Resources */,
 				BCD6DCD62696674D00D2E481 /* Assets.xcassets in Resources */,
-				BCD6DCD42696674C00D2E481 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,21 +147,12 @@
 			files = (
 				BCD6DCD12696674C00D2E481 /* ViewController.swift in Sources */,
 				BCD6DCCD2696674C00D2E481 /* AppDelegate.swift in Sources */,
-				BCD6DCCF2696674C00D2E481 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCD6DCD22696674C00D2E481 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCD6DCD32696674C00D2E481 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCD6DCD72696674D00D2E481 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -231,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -304,6 +288,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZB4N2WUDHX;
 				INFOPLIST_FILE = ConstraintKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZB4N2WUDHX;
 				INFOPLIST_FILE = ConstraintKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
